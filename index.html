@@ -4,10 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>leivaconstruction.co.nz</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(535deg, #000, #257fff);
+            color: white;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+        .qr-container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .qr-container img {
+            width: 400px;
+            height: 400px;
+        }
+        .qr-container p {
+            margin-top: 20px;
+            margin-bottom: 1px;
+            font-size: 1rem;
+            color: #333;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .qr-container img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
 </head>
-<body style="text-align:center; padding:20px;">
-    <h2>Carlos Leiva Construction Ltd.</h2>
-    <br>
-    <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://www.behance.net/carlosleiva16&size=400x400" alt="leivaconstruction.co.nz">
+<body>
+    <header>
+        <h2>Carlos Leiva Construction Limited</h2>
+        <p>Scan or Click the QR Code to access our website or resources instantly</p>
+    </header>
+    <div class="qr-container">
+        <a href="https://www.behance.net/carlosleiva16" target="_self">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://www.behance.net/carlosleiva16&size=350x350" alt="leivaconstruction.co.nz">
+        </a>
+        <p>Point your camera or QR scanner here</p>
+    </div>
+    <footer>
+        © 2024 Carlos Leiva Construction Limited. All rights reserved.
+    </footer>
 </body>
 </html>
